@@ -1,0 +1,22 @@
+    <head>
+    
+    {% block head %}
+        <title>Hebert Marques Francato</title>
+    {% endblock %}
+
+    <link rel="stylesheet" href="/style.css">
+    
+</head>
+
+<body> <!-- Camada 1 -->
+    <header> <!-- Camada 2 -->
+        <div class="links"> <!-- Camada 3, porém superior ao <header> -->
+            <a href="/">Sobre</a>
+            <a href="/portfolio">Aulas</a>
+        </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    </body>
+</html>
