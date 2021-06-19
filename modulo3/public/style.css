@@ -95,12 +95,13 @@ header {
     max-width: 800px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
 
 .card {
     background-color: var(--color-pink);
+    display: grid;
 }
 
 .card__image-container img {
@@ -115,6 +116,7 @@ header {
 .card__info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .card__price {
